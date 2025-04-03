@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Round Image Card</title>
+</head>
+<body>
+    <div class="card-container">
+    <div class="card">
+        <div class="image-container">
+            <img src="faheem3.JPG" alt="Profile Image" class="card-image">
+        </div>
+        <div class="card-content">
+            <div class="card-title">Faheem Fayaz</div>
+            <div class="card-description">
+                I am a machine learning engineer with a passion for developing intelligent systems. I am enthusiastic about AI and its potential to transform industries.            
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="projects-card">
+        <div class="projects-title">My Projects</div>
+        <a href="#" class="project-link">
+            <i class="fas fa-camera"></i> Portrait Gallery 2023
+        </a>
+        <a href="#" class="project-link">
+            <i class="fas fa-mountain"></i> Landscape Collection
+        </a>
+        <a href="#" class="project-link">
+            <i class="fas fa-book"></i> Photography Tutorials
+        </a>
+        <a href="#" class="project-link">
+            <i class="fas fa-store"></i> Print Shop
+        </a>
+    </div>
+    </div>
+
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f5f5f5;
+            font-family: Comic Sans MS, sans-serif;
+        }
+        
+        .card {
+            width: 280px;
+            text-align: center;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            background: white;
+            padding-bottom: 20px;
+        }
+        
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+            border: #52a9ff 2px solid;
+        }
+        
+        .image-container {
+            width: 150px;
+            height: 150px;
+            margin: 30px auto 20px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 5px solid #fff;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .card:hover .image-container {
+            transform: scale(1.05);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+        }
+        
+        .card-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .card:hover .card-image {
+            transform: scale(1.0);
+        }
+        
+        .card-content {
+            padding: 0 25px;
+        }
+        
+        .card-title {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        
+        .card-description {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+
+
+
+        .projects-card {
+            width: 280px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            background: white;
+            padding: 25px;
+        }
+        
+        .projects-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+            border: #52a9ff 2px solid;
+        }
+        
+        .projects-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #333;
+            text-align: center;
+        }
+        
+        .project-link {
+            display: block;
+            padding: 10px 15px;
+            margin-bottom: 10px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            color: black;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+        
+        .project-link:hover {
+            background-color: #52a9ff;
+            transform: translateX(5px);
+            color: white;
+        }
+        
+        .project-link i {
+            margin-right: 8px;
+        }
+
+        .card-container {
+    display: flex;
+    flex-direction: row;
+    gap: 30px; /* ← Spacing between cards */
+    padding: 20px; /* ← Spacing around container */
+}
+
+@media only screen and (max-width: 450px)
+ {
+            body{
+                align-items: center;
+            }
+            .card {
+                border-radius: 10px;
+            }
+            .card-container{
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .image-container {
+                width: 100px;
+                height: 100px;
+                margin: 20px auto 15px;
+            }
+            
+            .card-title {
+                font-size: 1.2rem;
+            }
+            
+            .projects-title {
+                font-size: 1.1rem;
+            }
+            
+            .project-link {
+                padding: 10px 12px;
+                font-size: 0.9rem;
+            }
+        }
+
+</style
+
+
+</body>
+</html>
